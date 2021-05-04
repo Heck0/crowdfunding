@@ -1,0 +1,116 @@
+.container {
+  border: 1px solid var(--lightGray);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.customRadioButton {
+  cursor: pointer;
+  position: relative;
+}
+
+.customRadioButton:hover {
+  color: var(--cyan);
+}
+
+.customRadioButton .checkmark {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  border: 1px solid var(--lightGray);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.customRadioButton input:checked ~ .checkmark {
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+    circle at center,
+    var(--cyan) calc((25px - (2px * 2) - (3px * 2)) / 2),
+    rgba(255, 255, 155, 0) 0
+  );
+}
+
+.titlesContainer {
+  display: flex;
+  margin-left: 2.5rem;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+
+.radioInput {
+  display: none;
+}
+
+.pledge {
+  color: var(--cyan);
+}
+
+.pledgeCardSelected {
+  border-color: var(--cyan);
+  border-width: 2px;
+}
+
+.nbLeft {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.left {
+  color: var(--darkGray);
+  font-weight: 500;
+}
+
+.pledgeContainer {
+  position: relative;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--lightGray);
+  width: calc(100% + 30px * 2);
+  margin-left: -30px;
+}
+
+.pledgeContainer span {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pledgeButtonsContainer {
+  display: flex;
+  justify-content: center;
+}
+.pledgeButtonsContainer :first-child {
+  margin-right: 1rem;
+}
+
+.pledgeButtonsContainer > * {
+  text-align: center;
+}
+
+.pledgeButtonsContainer input {
+  position: relative;
+  font-weight: 600;
+  color: var(--black);
+  border-radius: var(--circle);
+  border-color: var(--lightGray);
+}
+
+.pledgeButtonsContainer input::before {
+  content: "$";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-55%, -50%);
+}
+
+.pledgeContainer input,
+.pledgeContainer button {
+  max-width: 140px;
+}
