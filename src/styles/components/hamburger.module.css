@@ -1,0 +1,9 @@
+.hamburger {
+  width: 1.3rem;
+}
+
+@media (min-width: 800px) {
+  .hamburger__container {
+    display: none;
+  }
+}

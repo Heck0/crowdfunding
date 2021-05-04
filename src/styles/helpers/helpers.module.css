@@ -1,0 +1,25 @@
+.container,
+.contentContainer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: var(--maxWidth);
+}
+
+.contentContainer {
+  max-width: var(--contentMaxWidth);
+}
+
+.showContent {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: var(--fade);
+}
+
+.lowOpacity {
+  cursor: default;
+  opacity: 0.6;
+}

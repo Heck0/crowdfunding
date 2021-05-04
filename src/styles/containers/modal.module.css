@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  top: 3%;
+  max-width: var(--contentMaxWidth);
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.closeModalButton {
+  position: absolute;
+  top: 2.5rem;
+  right: 4rem;
+  z-index: 3;
+}
+.closeModalButton img {
+  height: 1.2rem;
+}

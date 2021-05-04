@@ -1,0 +1,47 @@
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.title {
+  margin-bottom: 0.7rem;
+}
+
+.pledge {
+  display: block;
+  color: var(--cyan);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.nbLeft {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-right: 0.6rem;
+}
+
+.left {
+  color: var(--darkGray);
+  font-weight: 500;
+}
+
+@media (min-width: 800px) {
+  .titles,
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom {
+    margin-top: 2rem;
+  }
+  .nbLeft {
+    margin-bottom: inherit;
+  }
+}

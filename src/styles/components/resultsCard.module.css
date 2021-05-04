@@ -1,0 +1,40 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.result:not(:last-child)::after {
+  margin-top: 1.5rem;
+  content: "";
+  border-bottom: 1px solid var(--lightGray);
+  width: 30%;
+}
+
+.result__title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.result__text {
+  color: var(--darkGray);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 800px) {
+  .result {
+    flex-basis: 33.33%;
+    position: relative;
+  }
+  .result:not(:last-child)::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80%;
+    margin: initial;
+    border-bottom: inherit;
+    border-right: 1px solid var(--lightGray);
+  }
+}

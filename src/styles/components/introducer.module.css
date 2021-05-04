@@ -1,0 +1,59 @@
+.margin__top {
+  margin-top: -100px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container::before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  content: url("../../assets/images/logo-mastercraft.svg");
+  display: block;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-shrink: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmark span {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .text {
+    margin-bottom: 2rem;
+  }
+
+  .buttons > button:first-of-type {
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 800px) {
+  .bookmark {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: var(--circle);
+    background-color: var(--lighterGray);
+  }
+
+  .bookmark span {
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: var(--darkGray);
+    font-weight: 700;
+  }
+  .bookmark .isBookmarked {
+    color: var(--darkCyan);
+  }
+}

@@ -1,0 +1,7 @@
+.container {
+  background-image: url("../../assets/images/image-hero-mobile.jpg");
+  height: 400px;
+  background-color: var(--darkCyan);
+  background-size: cover;
+  background-position: center;
+}

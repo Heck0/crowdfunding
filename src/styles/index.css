@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+:root {
+  /* Colors */
+  --black: hsl(0, 0%, 0%);
+  --darkGray: hsl(0, 0%, 48%);
+  --lightGray: hsl(0, 0%, 92%);
+  --lighterGray: hsl(0, 0%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(176, 50%, 47%);
+  --darkCyan: hsl(176, 72%, 28%);
+  --blackFilter: rgba(0%, 0%, 0%, 0.5);
+  /*  Sizes */
+  --contentMaxWidth: 900px;
+  --maxWidth: 1400px;
+
+  /* Border-radius */
+  --circle: 3rem;
+
+  /* Animation */
+  --fade: all 300ms ease-in-out;
+  --slideIn: all 400ms ease-in;
+}
+
+/* Media Queries */
+
+/*
+ * --mobile: 375px;
+ * --bigMobile: 500px;
+ * --smallScreen: 800px;
+ * --desktop: 1440px; 
+*/
+
+body {
+  margin: 0;
+  font-family: "Commissioner", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: var(--lightGray);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--black);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+p {
+  color: var(--darkGray);
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--cyan);
+  padding: 1rem 2rem;
+  border-radius: var(--circle);
+}
+
+.btn--inactive {
+  cursor: default;
+  background-color: var(--darkGray);
+  color: var(--white);
+}
+
+.btn:not(.btn--inactive):active,
+.btn:not(.btn--inactive):hover {
+  background-color: var(--darkCyan);
+}
